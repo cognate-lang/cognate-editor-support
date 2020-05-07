@@ -25,7 +25,10 @@ function HighlightCognate()
   call matchadd('Define', 'Set')
   call matchadd('Define', 'Where')
   " Symbols
-  call matchadd('Operator', '£')
+  call matchadd('Operator', '\*')
+  call matchadd('Operator', '\.')
+  call matchadd('Operator', '/')
+  call matchadd('Operator', '=')
   " Booleans
   call matchadd('Boolean', 'True')
   call matchadd('Boolean', 'False')
