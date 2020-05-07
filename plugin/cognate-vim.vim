@@ -8,7 +8,7 @@ function HighlightCognate()
   call matchadd('Function', '[A-Z]')
   " Numbers
   call matchadd('Number', '[0-9]')
-  call matchadd('Number', '\.')
+  call matchadd('Number', '\.[0-9]')
   " Strings
   call matchadd('String', '".*"')
   call matchadd('String', '''.''')
