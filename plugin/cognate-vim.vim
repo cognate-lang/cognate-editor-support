@@ -13,6 +13,14 @@ function! HighlightCognate()
   call matchadd('Operator', '\_s>\_s')
   call matchadd('Operator', '\_s<\_s')
   call matchadd('Operator', ';')
+  " Brackets
+  call matchadd('Normal', '\[')
+  call matchadd('Normal', '\]')
+  call matchadd('Normal', ')')
+  call matchadd('Normal', '(')
+  call matchadd('Normal', '{')
+  call matchadd('Normal', '}')
+
   " Formal
   call matchadd('Function', '[A-Z][a-z]\+')
   call matchadd('Function', '[A-Z]')
@@ -22,14 +30,7 @@ function! HighlightCognate()
   " Strings
   call matchadd('String', '".*"')
   call matchadd('String', '''.''')
- " Brackets
-  call matchadd('Normal', '\[')
-  call matchadd('Normal', '\]')
-  call matchadd('Normal', ')')
-  call matchadd('Normal', '(')
-  call matchadd('Normal', '{')
-  call matchadd('Normal', '}')
-  " Special stuff
+   " Special stuff
   call matchadd('Define', 'Let')
   call matchadd('Define', 'Define')
   call matchadd('Define', 'Set')
