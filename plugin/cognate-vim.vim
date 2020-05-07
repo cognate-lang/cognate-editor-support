@@ -1,9 +1,19 @@
 " Cognate systax highlighting
 function! HighlightCognate()
-  " Informal
-  "call matchadd('Comment', '.\w\+')
-  "call matchadd('Comment', '.')
-  " Formal
+" Informal
+  call matchadd('Comment', '.\w\+')
+  call matchadd('Comment', '.')
+
+  " Symbols
+  call matchadd('Operator', '\_s\*\_s')
+  call matchadd('Operator', '\_s\+\_s')
+  call matchadd('Operator', '\_s-\_s')
+  call matchadd('Operator', '\_s=\_s')
+  call matchadd('Operator', '\_s>=\_s')
+  call matchadd('Operator', '\_s<=\_s')
+  call matchadd('Operator', '\_s>\_s')
+  call matchadd('Operator', '\_s<\_s')
+    " Formal
   call matchadd('Function', '[A-Z][a-z]\+')
   call matchadd('Function', '[A-Z]')
   " Numbers
@@ -24,15 +34,6 @@ function! HighlightCognate()
   call matchadd('Define', 'Define')
   call matchadd('Define', 'Set')
   call matchadd('Define', 'Where')
-  " Symbols
-  call matchadd('Operator', '\_s\*\_s')
-  call matchadd('Operator', '\_s\+\_s')
-  call matchadd('Operator', '\_s-\_s')
-  call matchadd('Operator', '\_s=\_s')
-  call matchadd('Operator', '\_s>=\_s')
-  call matchadd('Operator', '\_s<=\_s')
-  call matchadd('Operator', '\_s>\_s')
-  call matchadd('Operator', '\_s<\_s')
   " Booleans
   call matchadd('Boolean', 'True')
   call matchadd('Boolean', 'False')
