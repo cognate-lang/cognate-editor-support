@@ -12,6 +12,7 @@ function! HighlightCognate()
   call matchadd('Operator', '\_s<=\_s')
   call matchadd('Operator', '\_s>\_s')
   call matchadd('Operator', '\_s<\_s')
+  call matchadd('Operator', '\_s;\_s')
   " Formal
   call matchadd('Function', '[A-Z][a-z]\+')
   call matchadd('Function', '[A-Z]')
