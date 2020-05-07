@@ -21,6 +21,8 @@ augroup cog
   autocmd VimEnter *.cog call matchadd('Normal', '(')
   autocmd VimEnter *.cog call matchadd('Normal', '{')
   autocmd VimEnter *.cog call matchadd('Normal', '}')
+  " Symbols
+  autocmd VimEnter *.cog call matchadd('Normal', '\*')
   " Special stuff
   autocmd VimEnter *.cog call matchadd('Define', 'Let')
   autocmd VimEnter *.cog call matchadd('Define', 'Define')
