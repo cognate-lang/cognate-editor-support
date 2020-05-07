@@ -1,44 +1,46 @@
 " Cognate systax highlighting
-augroup cog
-  " Symbols
-  autocmd VimEnter *.cog call matchadd('Operator', '.')
+function HighlightCognate()
+" Symbols
+  matchadd('Operator', '.')
   " Informal
-  autocmd VimEnter *.cog call matchadd('Comment', '.\w\+')
-  autocmd VimEnter *.cog call matchadd('Comment', '.')
+  matchadd('Comment', '.\w\+')
+  matchadd('Comment', '.')
   " Formal
-  autocmd VimEnter *.cog call matchadd('Function', '[A-Z][a-z]\+')
-  autocmd VimEnter *.cog call matchadd('Function', '[A-Z]')
+  matchadd('Function', '[A-Z][a-z]\+')
+  matchadd('Function', '[A-Z]')
   " Numbers
-  autocmd VimEnter *.cog call matchadd('Number', '[0-9]')
-  autocmd VimEnter *.cog call matchadd('Number', '\.')
+  matchadd('Number', '[0-9]')
+  matchadd('Number', '\.')
   " Strings
-  autocmd VimEnter *.cog call matchadd('String', '".*"')
-  autocmd VimEnter *.cog call matchadd('String', '''.''')
+  matchadd('String', '".*"')
+  matchadd('String', '''.''')
  " Brackets
-  autocmd VimEnter *.cog call matchadd('Normal', '\[')
-  autocmd VimEnter *.cog call matchadd('Normal', '\]')
-  autocmd VimEnter *.cog call matchadd('Normal', ')')
-  autocmd VimEnter *.cog call matchadd('Normal', '(')
-  autocmd VimEnter *.cog call matchadd('Normal', '{')
-  autocmd VimEnter *.cog call matchadd('Normal', '}')
+  matchadd('Normal', '\[')
+  matchadd('Normal', '\]')
+  matchadd('Normal', ')')
+  matchadd('Normal', '(')
+  matchadd('Normal', '{')
+  matchadd('Normal', '}')
   " Symbols
-  autocmd VimEnter *.cog call matchadd('Normal', '\*')
+  matchadd('Normal', '\*')
   " Special stuff
-  autocmd VimEnter *.cog call matchadd('Define', 'Let')
-  autocmd VimEnter *.cog call matchadd('Define', 'Define')
-  autocmd VimEnter *.cog call matchadd('Define', 'Set')
-  autocmd VimEnter *.cog call matchadd('Define', 'Where')
+  matchadd('Define', 'Let')
+  matchadd('Define', 'Define')
+  matchadd('Define', 'Set')
+  matchadd('Define', 'Where')
   " Booleans
-  autocmd VimEnter *.cog call matchadd('Boolean', 'True')
-  autocmd VimEnter *.cog call matchadd('Boolean', 'False')
-  autocmd VimEnter *.cog call matchadd('Boolean', 'Either')
-  autocmd VimEnter *.cog call matchadd('Boolean', 'Not')
-  autocmd VimEnter *.cog call matchadd('Boolean', 'Both')
+  matchadd('Boolean', 'True')
+  matchadd('Boolean', 'False')
+  matchadd('Boolean', 'Either')
+  matchadd('Boolean', 'Not')
+  matchadd('Boolean', 'Both')
   " Branch statements
-  autocmd VimEnter *.cog call matchadd('Conditional', 'If')
-  autocmd VimEnter *.cog call matchadd('Conditional', 'When')
+  matchadd('Conditional', 'If')
+  matchadd('Conditional', 'When')
   " Comments
-  autocmd VimEnter *.cog call matchadd('Comment', '\~\_.\{-}\~')
-  autocmd VimEnter *.cog call matchadd('Comment', '\~')
-  autocmd VimEnter *.cog call matchadd('Comment', '\~\~.*') " I hate regex!
-augroup END
+  matchadd('Comment', '\~\_.\{-}\~')
+  matchadd('Comment', '\~')
+  matchadd('Comment', '\~\~.*') " I hate regex!
+endfunction
+
+autocmd VimEnter *.cog call HighlightCognate()
