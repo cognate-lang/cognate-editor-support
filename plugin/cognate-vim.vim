@@ -3,8 +3,8 @@ augroup cog
   " Symbols
   autocmd VimEnter *.cog call matchadd('Operator', '.')
   " Informal
-  autocmd VimEnter *.cog call matchadd('Comment', '[a-z]\w\+')
-  autocmd VimEnter *.cog call matchadd('Comment', '[a-z]')
+  autocmd VimEnter *.cog call matchadd('Comment', '.\w\+')
+  autocmd VimEnter *.cog call matchadd('Comment', '.')
   " Formal
   autocmd VimEnter *.cog call matchadd('Function', '[A-Z][a-z]\+')
   autocmd VimEnter *.cog call matchadd('Function', '[A-Z]')
@@ -15,12 +15,12 @@ augroup cog
   autocmd VimEnter *.cog call matchadd('String', '".*"')
   autocmd VimEnter *.cog call matchadd('String', '''.''')
  " Brackets
-  autocmd VimEnter *.cog call matchadd('Comment', '\[')
-  autocmd VimEnter *.cog call matchadd('Comment', '\]')
-  autocmd VimEnter *.cog call matchadd('Comment', ')')
-  autocmd VimEnter *.cog call matchadd('Comment', '(')
-  autocmd VimEnter *.cog call matchadd('Comment', '{')
-  autocmd VimEnter *.cog call matchadd('Comment', '}')
+  autocmd VimEnter *.cog call matchadd('Normal', '\[')
+  autocmd VimEnter *.cog call matchadd('Normal', '\]')
+  autocmd VimEnter *.cog call matchadd('Normal', ')')
+  autocmd VimEnter *.cog call matchadd('Normal', '(')
+  autocmd VimEnter *.cog call matchadd('Normal', '{')
+  autocmd VimEnter *.cog call matchadd('Normal', '}')
   " Special stuff
   autocmd VimEnter *.cog call matchadd('Define', 'Let')
   autocmd VimEnter *.cog call matchadd('Define', 'Define')
