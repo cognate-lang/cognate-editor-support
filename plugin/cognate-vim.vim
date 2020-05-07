@@ -1,7 +1,5 @@
 " Cognate systax highlighting
 function HighlightCognate()
-  " Symbols
-  call matchadd('Operator', '\*')
   " Informal
   call matchadd('Comment', '.\w\+')
   call matchadd('Comment', '.')
@@ -26,6 +24,8 @@ function HighlightCognate()
   call matchadd('Define', 'Define')
   call matchadd('Define', 'Set')
   call matchadd('Define', 'Where')
+  " Symbols
+  call matchadd('Operator', '£')
   " Booleans
   call matchadd('Boolean', 'True')
   call matchadd('Boolean', 'False')
