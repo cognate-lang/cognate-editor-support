@@ -13,6 +13,7 @@ function! HighlightCognate()
   call matchadd('Operator', '\_s>\_s')
   call matchadd('Operator', '\_s<\_s')
   call matchadd('Operator', ';')
+  call matchadd('Operator', ',')
   " Brackets
   call matchadd('Normal', '\[')
   call matchadd('Normal', '\]')
