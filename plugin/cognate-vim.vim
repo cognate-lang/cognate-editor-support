@@ -50,4 +50,4 @@ function! HighlightCognate()
   call matchadd('Comment', '\~\~.*') " I hate regex!
 endfunction
 
-autocmd VimEnter *.cog call HighlightCognate()
+autocmd BufEnter *.cog call HighlightCognate()
