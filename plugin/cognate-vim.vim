@@ -1,8 +1,8 @@
 " Cognate systax highlighting
 function! HighlightCognate()
   " Informal
-  call matchadd('Comment', '.\w\+')
-  call matchadd('Comment', '.')
+  call matchadd('Normal', '.\w\+')
+  call matchadd('Normal', '.')
   " Symbols
   call matchadd('Operator', '\_s\*\_s')
   call matchadd('Operator', '\_s\+\_s')
