@@ -5,7 +5,7 @@ function! HighlightCognate()
   call matchadd('Normal', '.')
   " Symbols
   call matchadd('Operator', '\_s\*\_s')
-  call matchadd('Operator', '\_s\+\_s')
+  call matchadd('Operator', '\_s+\_s')
   call matchadd('Operator', '\_s-\_s')
   call matchadd('Operator', '\_s=\_s')
   call matchadd('Operator', '\_s>=\_s')
