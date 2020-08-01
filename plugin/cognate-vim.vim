@@ -29,9 +29,8 @@ function! HighlightCognate()
   call matchadd('Number', '[0-9]')
   call matchadd('Number', '\.[0-9]')
   " Strings
-  call matchadd('String', '""')
-  call matchadd('String', '".*"')
-  call matchadd('String', '''.''')
+  call matchadd('String', '''''')
+  call matchadd('String', '''.*''')
    " Special stuff
   call matchadd('Define', 'Let')
   call matchadd('Define', 'Define')
