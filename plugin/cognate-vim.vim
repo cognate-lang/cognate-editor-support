@@ -28,9 +28,6 @@ function! HighlightCognate()
   " Numbers
   call matchadd('Number', '[0-9]')
   call matchadd('Number', '\.[0-9]')
-  " Strings
-  call matchadd('String', '''''')
-  call matchadd('String', '''.*''')
    " Special stuff
   call matchadd('Define', 'Let')
   call matchadd('Define', 'Define')
@@ -49,6 +46,10 @@ function! HighlightCognate()
   call matchadd('Comment', '\~\_.\{-}\~')
   call matchadd('Comment', '\~')
   call matchadd('Comment', '\~\~.*') " I hate regex!
+  " Strings
+  call matchadd('String', '''''')
+  call matchadd('String', '''.*''')
+
 endfunction
 
 autocmd BufEnter *.cog call HighlightCognate()
