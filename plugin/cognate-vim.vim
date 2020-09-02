@@ -23,31 +23,26 @@ function! HighlightCognate()
   call matchadd('Normal', '}')
 
   " Formal
-  call matchadd('Function', '[A-Z][a-z]\+')
-  call matchadd('Function', '[A-Z]')
+  call matchadd('Function', '\_s[A-Z][a-z]\+')
+  call matchadd('Function', '\_s[A-Z]')
   " Numbers
   call matchadd('Number', '[0-9]')
   call matchadd('Number', '\.[0-9]')
    " Special stuff
-  call matchadd('Constant', 'Let')
-  call matchadd('Constant', 'Define')
-  call matchadd('Define', 'Set')
-  call matchadd('Define', 'Redefine')
-  call matchadd('Structure', 'Record')
-  call matchadd('Structure', 'Field')
+  call matchadd('Constant', '\_sLet\_s')
+  call matchadd('Define', '\_sSet\_s')
+  call matchadd('Structure', '\_sRecord\_s')
   " Booleans
-  call matchadd('Boolean', 'True')
-  call matchadd('Boolean', 'False')
-  call matchadd('Boolean', 'Either')
-  call matchadd('Boolean', 'Not')
-  call matchadd('Boolean', 'Both')
+  call matchadd('Boolean', '\_sTrue\_s')
+  call matchadd('Boolean', '\_sFalse\_s')
+  call matchadd('Boolean', '\_sEither\_s')
+  call matchadd('Boolean', '\_sNot\_s')
+  call matchadd('Boolean', '\_sBoth\_s')
   " Branch statements
-  call matchadd('Conditional', 'If')
-  call matchadd('Conditional', 'When')
+  call matchadd('Conditional', '\_sIf\_s')
+  call matchadd('Conditional', '\_sWhen\_s')
   " Comments
-  call matchadd('Comment', '\~\_.\{-}\~')
-  call matchadd('Comment', '\~')
-  call matchadd('Comment', '\~\~.*') " I hate regex!
+  call matchadd('Comment', '\v([\~\~])(.{-})\1')
   " Strings
   call matchadd('String', '\v([''])(.{-})\1')
 
