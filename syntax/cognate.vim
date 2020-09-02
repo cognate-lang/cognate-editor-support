@@ -27,7 +27,7 @@ hi def link cogString    String
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator '\(\s\|$\|;\|,\|(\|)\)\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)\(\s\|$\|;\|,\|(\|)\)' " I hate regex
+syn match cogOperator '\(\s\|^\|;\|,\|(\|)\)\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)\(\s\|$\|;\|,\|(\|)\)' " I hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
