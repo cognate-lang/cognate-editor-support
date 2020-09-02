@@ -10,7 +10,7 @@ endif
 let b:current_syntax = "cognate"
 
 hi def link cogInformal  Normal
-hi def link cogOperator  Todo
+hi def link cogOperator  Operator
 hi def link cogDelimiter Delimiter
 hi def link cogBrace     Bracket
 hi def link cogFunction  Function
@@ -21,13 +21,14 @@ hi def link cogRecord    Structure
 hi def link cogBoolean   Boolean
 hi def link cogBranch    Conditional
 hi def link cogComment   Comment
+hi def link cogTodo      Todo
 hi def link cogString    String
 
 " Informal
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn keyword cogOperator TODO * / + - == >= <= > <
+syn match cogOperator '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
@@ -52,7 +53,9 @@ syn match cogBoolean '\<Both\>'
 syn match cogBranch '\<If\>'
 syn match cogBranch '\<When\>'
 " Comments
-syn region cogComment start="\~" end="\~"
-syn region cogComment start="\~\~" end="$"
+syn region cogComment start="\~" end="\~" contains=cogTodo
+syn region cogComment start="\~\~" end="$" contains=cogTodo
+" Todo
+syn keyword cogTodo contained TODO FIXME
 " Strings
 syn region cogString start="'" end="'"
