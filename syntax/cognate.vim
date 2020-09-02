@@ -39,3 +39,5 @@ match Comment '\v([\~\~])(.{-})\1'
 match Comment '\~\~.*'
 " Strings
 match String '\v([''])(.{-})\1'
+
+let b:current_syntax = "cognate"
