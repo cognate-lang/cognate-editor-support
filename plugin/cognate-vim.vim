@@ -49,7 +49,7 @@ function! HighlightCognate()
   call matchadd('Comment', '\~')
   call matchadd('Comment', '\~\~.*') " I hate regex!
   " Strings
-  call matchadd('String', '\v([''"])(.{-})\1')
+  call matchadd('String', '\v([''])(.{-})\1')
 
 endfunction
 
