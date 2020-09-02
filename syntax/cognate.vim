@@ -28,7 +28,7 @@ hi def link cogString    String
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
+syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
@@ -53,8 +53,8 @@ syn match cogBoolean '\<Both\>'
 syn match cogBranch '\<If\>'
 syn match cogBranch '\<When\>'
 " Comments
-syn region cogComment start="\~" end="\~" contains=cogTodo
-syn region cogComment start="\~\~" end="$" contains=cogTodo
+syn region cogComment start="\~"   end="\~" contains=cogTodo
+syn region cogComment start="\~\~" end="$"  contains=cogTodo
 " Todo
 syn keyword cogTodo contained TODO FIXME
 " Strings
