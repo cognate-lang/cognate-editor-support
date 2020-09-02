@@ -15,6 +15,4 @@ git clone https://github.com/stavromuellerbeta/cognate-vim
 ```
 
 ### Known Bugs:
-- Operators will not be highlighted when not padded with whitespace.
-- When two operators are separated by only one space, the second one is not highlighted.
-- Pascal case bugs out the highlighting. 'DefineIf' is highlighted as Define and as If.
+- Operators inside function names are highlighted as operators.
