@@ -15,16 +15,10 @@ function! HighlightCognate()
   call matchadd('Delimiter', ';')
   call matchadd('Delimiter', ',')
   " Brackets
-  call matchadd('Normal', '\[')
-  call matchadd('Normal', '\]')
   call matchadd('Normal', ')')
   call matchadd('Normal', '(')
-  call matchadd('Normal', '{')
-  call matchadd('Normal', '}')
-
   " Formal
   call matchadd('Function', '\<[A-Z]\w*\>')
-  call matchadd('Function', '\<[A-Z]\>')
   " Numbers
   call matchadd('Number', '[0-9]')
   call matchadd('Number', '\.[0-9]')
