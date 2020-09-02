@@ -1,3 +1,12 @@
+" Vim syntax file
+" Language: Cognate
+" Maintainer: Finn Barber
+" Latest Revision: 2nd Spetember 2020
+
+if exists("b:current_syntax")
+  finish
+endif
+
 let b:current_syntax = "cognate"
 
 hi def link cogInformal  Normal
