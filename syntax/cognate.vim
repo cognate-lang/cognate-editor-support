@@ -24,43 +24,41 @@ hi def link cogComment   Comment
 hi def link cogString    String
 
 " Informal
-match cogInformal '.\w\+'
-match cogInformal '.'
+syn match cogInformal '.\w\+'
+syn match cogInformal '.'
 " Symbols
-match cogOperator '\<\*\>'
-match cogOperator '\<+\>'
-match cogOperator '\<-\>'
-match cogOperator '\<==\>'
-match cogOperator '\<>=\>'
-match cogOperator '\<<=\>'
-match cogOperator '\<>\>'
-match cogOperator '\<<\>'
-match cogDelimiter ';'
-match cogDelimiter ','
+syn match cogOperator '\<\*\>'
+syn match cogOperator '\<+\>'
+syn match cogOperator '\<-\>'
+syn match cogOperator '\<==\>'
+syn match cogOperator '\<>=\>'
+syn match cogOperator '\<<=\>'
+syn match cogOperator '\<>\>'
+syn match cogOperator '\<<\>'
+syn match cogDelimiter ';'
+syn match cogDelimiter ','
 " Brackets
-match cogBrace '('
-match cogBrace ')'
+syn match cogBrace '('
+syn match cogBrace ')'
 " Formal
-match cogFunction '\<[A-Z]\w*\>'
+syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
-match cogNumber '\<[0-9]*\>'
-match cogNumber '\<\.[0-9]*\>'
-match cogNumber '\<[0-9]*\.[0-9]*\>'
-  " Special stuff
-match cogLet    '\<Let\>'
-match cogSet    '\<Set\>'
-match cogRecord '\<Record\>'
+syn match cogNumber '[-+]\d\+\.\d*'
+" Special stuff
+syn match cogLet    '\<Let\>'
+syn match cogSet    '\<Set\>'
+syn match cogRecord '\<Record\>'
 " Booleans
-match cogBoolean '\<True\>'
-match cogBoolean '\<False\>'
-match cogBoolean '\<Either\>'
-match cogBoolean '\<Not\>'
-match cogBoolean '\<Both\>'
+syn match cogBoolean '\<True\>'
+syn match cogBoolean '\<False\>'
+syn match cogBoolean '\<Either\>'
+syn match cogBoolean '\<Not\>'
+syn match cogBoolean '\<Both\>'
 " Branch statements
-match cogBranch '\<If\>'
-match cogBranch '\<When\>'
+syn match cogBranch '\<If\>'
+syn match cogBranch '\<When\>'
 " Comments
-match cogComment '\v([\~\~])(.{-})\1'
-match cogComment '\~\~.*'
+syn match cogComment '\v([\~\~])(.{-})\1'
+syn match cogComment '\~\~.*'
 " Strings
-match cogString '\v([''])(.{-})\1'
+syn region cogString start=''' end=''' contained
