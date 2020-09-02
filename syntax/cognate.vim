@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 2nd Spetember 2020
+" Latest Revision: 2nd September 2020
 
 if exists("b:current_syntax")
   finish
@@ -27,7 +27,7 @@ hi def link cogString    String
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator '\<\(+\|-\|==\|>=\|<=\|>\|<\)\>'
+syn match cogOperator '\_s\(+\|-\|==\|>=\|<=\|>\|<\)\_s'
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
