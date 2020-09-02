@@ -38,8 +38,7 @@ syn match cogOperator '\<<\>'
 syn match cogDelimiter ';'
 syn match cogDelimiter ','
 " Brackets
-syn match cogBrace '('
-syn match cogBrace ')'
+syn match cogBrace '(\|)'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
