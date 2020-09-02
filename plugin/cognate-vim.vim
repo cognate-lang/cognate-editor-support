@@ -20,8 +20,9 @@ function! HighlightCognate()
   " Formal
   call matchadd('Function', '\<[A-Z]\w*\>')
   " Numbers
-  call matchadd('Number', '[0-9]')
-  call matchadd('Number', '\.[0-9]')
+  call matchadd('Number', '\<[0-9]*\>')
+  call matchadd('Number', '\<\.[0-9]*\>')
+  call matchadd('Number', '\<[0-9]*\.[0-9]*\>')
    " Special stuff
   call matchadd('Constant', '\<Let\>')
   call matchadd('Define', '\<Set\>')
