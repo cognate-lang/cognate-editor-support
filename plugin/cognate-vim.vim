@@ -23,7 +23,7 @@ function! HighlightCognate()
   call matchadd('Normal', '}')
 
   " Formal
-  call matchadd('Function', '\<[A-Z]*.\>')
+  call matchadd('Function', '\<[A-Z].*\>')
   call matchadd('Function', '\<[A-Z]\>')
   " Numbers
   call matchadd('Number', '[0-9]')
