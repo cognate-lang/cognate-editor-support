@@ -61,4 +61,4 @@ syn match cogBranch '\<When\>'
 syn match cogComment '\v([\~\~])(.{-})\1'
 syn match cogComment '\~\~.*'
 " Strings
-syn region cogString start=''' end=''' contained
+syn match cogString '\v([''])(.{-})\1'
