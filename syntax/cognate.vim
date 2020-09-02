@@ -10,7 +10,7 @@ endif
 let b:current_syntax = "cognate"
 
 hi def link cogInformal  Normal
-hi def link cogOperator  Operator
+hi def link cogOperator  Todo
 hi def link cogDelimiter Delimiter
 hi def link cogBrace     Todo
 hi def link cogFunction  Function
