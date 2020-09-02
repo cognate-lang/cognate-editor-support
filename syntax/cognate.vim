@@ -59,5 +59,6 @@ syn match cogBranch '\<If\>'
 syn match cogBranch '\<When\>'
 " Comments
 syn region cogComment start="\~" end="\~"
+syn region cogComment start="\~\~" end="$"
 " Strings
 syn region cogString start="'" end="'"
