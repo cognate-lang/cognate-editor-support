@@ -23,7 +23,7 @@ function! HighlightCognate()
   call matchadd('Normal', '}')
 
   " Formal
-  call matchadd('Function', '\_s[A-Z][a-z]\+')
+  call matchadd('Function', '\<[A-Z][a-z]\+')
   call matchadd('Function', '\_s[A-Z]')
   " Numbers
   call matchadd('Number', '[0-9]')
@@ -43,6 +43,7 @@ function! HighlightCognate()
   call matchadd('Conditional', '\_sWhen\_s')
   " Comments
   call matchadd('Comment', '\v([\~\~])(.{-})\1')
+  call matchadd('Comment', '\~\~.*') " I hate regex!
   " Strings
   call matchadd('String', '\v([''])(.{-})\1')
 
