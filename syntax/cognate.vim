@@ -11,10 +11,10 @@ match Operator '\<<=\>'
 match Operator '\<>\>'
 match Operator '\<<\>'
 match Delimiter ';'
-match Delimiter '
+match Delimiter ','
 " Brackets
-match Normal ''
-match Normal '
+match Normal '('
+match Normal ')'
 " Formal
 match Function '\<[A-Z]\w*\>'
 " Numbers
