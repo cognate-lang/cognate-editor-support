@@ -58,7 +58,6 @@ syn match cogBoolean '\<Both\>'
 syn match cogBranch '\<If\>'
 syn match cogBranch '\<When\>'
 " Comments
-syn match cogComment '\v([\~\~])(.{-})\1'
-syn match cogComment '\~\~.*'
+syn region cogComment start="~" end="~"
 " Strings
 syn region cogString start="'" end="'"
