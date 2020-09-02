@@ -1,43 +1,58 @@
 " Informal
-match Normal '.\w\+'
-match Normal '.'
+match cogInformal '.\w\+'
+match cogInformal '.'
 " Symbols
-match Operator '\<\*\>'
-match Operator '\<+\>'
-match Operator '\<-\>'
-match Operator '\<==\>'
-match Operator '\<>=\>'
-match Operator '\<<=\>'
-match Operator '\<>\>'
-match Operator '\<<\>'
-match Delimiter ';'
-match Delimiter ','
+match cogOperator '\<\*\>'
+match cogOperator '\<+\>'
+match cogOperator '\<-\>'
+match cogOperator '\<==\>'
+match cogOperator '\<>=\>'
+match cogOperator '\<<=\>'
+match cogOperator '\<>\>'
+match cogOperator '\<<\>'
+match cogDelimiter ';'
+match cogDelimiter ','
 " Brackets
-match Normal '('
-match Normal ')'
+match cogBrace '('
+match cogBrace ')'
 " Formal
-match Function '\<[A-Z]\w*\>'
+match cogFunction '\<[A-Z]\w*\>'
 " Numbers
-match Number '\<[0-9]*\>'
-match Number '\<\.[0-9]*\>'
-match Number '\<[0-9]*\.[0-9]*\>'
+match cogNumber '\<[0-9]*\>'
+match cogNumber '\<\.[0-9]*\>'
+match cogNumber '\<[0-9]*\.[0-9]*\>'
   " Special stuff
-match Constant '\<Let\>'
-match Define '\<Set\>'
-match Structure '\<Record\>'
+match cogLet    '\<Let\>'
+match cogSet    '\<Set\>'
+match cogRecord '\<Record\>'
 " Booleans
-match Boolean '\<True\>'
-match Boolean '\<False\>'
-match Boolean '\<Either\>'
-match Boolean '\<Not\>'
-match Boolean '\<Both\>'
+match cogBoolean '\<True\>'
+match cogBoolean '\<False\>'
+match cogBoolean '\<Either\>'
+match cogBoolean '\<Not\>'
+match cogBoolean '\<Both\>'
 " Branch statements
-match Conditional '\<If\>'
-match Conditional '\<When\>'
+match cogBranch '\<If\>'
+match cogBranch '\<When\>'
 " Comments
-match Comment '\v([\~\~])(.{-})\1'
-match Comment '\~\~.*'
+match cogComment '\v([\~\~])(.{-})\1'
+match cogComment '\~\~.*'
 " Strings
-match String '\v([''])(.{-})\1'
+match cogString '\v([''])(.{-})\1'
 
 let b:current_syntax = "cognate"
+
+hi def link cogInformal  Normal
+hi def link cogOperator  Operator
+hi def link cogDelimiter Delimiter
+hi def link cogBrace     Normal
+hi def link cogFunction  Function
+hi def link cogNumber    Number 
+hi def link cogLet       Constant
+hi def link cogSet       Define
+hi def link cogRecord    Structure
+hi def link cogBoolean   Boolean
+hi def link cogBranch    Conditional
+hi def link cogComment   Comment
+hi def link cogString    String
+ 
