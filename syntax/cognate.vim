@@ -10,9 +10,9 @@ endif
 let b:current_syntax = "cognate"
 
 hi def link cogInformal  Normal
-hi def link cogOperator  Todo
+hi def link cogOperator  Operator
 hi def link cogDelimiter Delimiter
-hi def link cogBrace     Todo
+hi def link cogBrace     Bracket
 hi def link cogFunction  Function
 hi def link cogNumber    Number 
 hi def link cogLet       Constant
@@ -27,14 +27,17 @@ hi def link cogString    String
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator '\(\_s\|$\|;\|,\|(\|)\)\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)\(\_s\|$\|;\|,\|(\|)\)'
+syn match cogOperator '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)\(\_s\|$\|;\|,\|(\|)\)'
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
-syn match cogNumber '[-+]\d\+\.\d*'
+syn match cogNumber '-\d\+\.\d*'
+syn match cogNumber '\d\+\.\d*'
+syn match cogNumber '-\d\+'
+syn match cogNumber '\d\+'
 " Special stuff
 syn match cogLet    '\<Let\>'
 syn match cogSet    '\<Set\>'
