@@ -16,6 +16,7 @@ hi def link cogBrace     Bracket
 hi def link cogFunction  Function
 hi def link cogNumber    Number 
 hi def link cogLet       Constant
+hi def link cogDefine    Function
 hi def link cogSet       Define
 hi def link cogRecord    Structure
 hi def link cogBoolean   Boolean
@@ -39,6 +40,7 @@ syn match cogNumber '-*\d\+\.\d*'
 syn match cogNumber '-*\d\+'
 " Special stuff
 syn match cogLet    '\<Let\>'
+syn match cogDefine '\<Define\>'
 syn match cogSet    '\<Set\>'
 syn match cogRecord '\<Record\>'
 " Booleans
