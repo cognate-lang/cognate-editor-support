@@ -16,8 +16,8 @@ hi def link cogBrace     Bracket
 hi def link cogFunction  Function
 hi def link cogNumber    Number 
 hi def link cogLet       Constant
-hi def link cogDefine    Function
-hi def link cogSet       Define
+hi def link cogSet       Constant
+hi def link cogDefine    Define
 hi def link cogRecord    Structure
 hi def link cogBoolean   Boolean
 hi def link cogBranch    Conditional
