@@ -32,7 +32,7 @@ syn match cogInformal '.'
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
-syn match cogBrace '(\|)'
+syn match cogBrace '{\|}'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
