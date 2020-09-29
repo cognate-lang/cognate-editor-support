@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 2nd September 2020
+" Latest Revision: 26th September 2020
 
 if exists("b:current_syntax")
   finish
