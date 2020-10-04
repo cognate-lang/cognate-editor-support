@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 2nd September 2020
+" Latest Revision: 4th October 2020
 
 if exists("b:current_syntax")
   finish
@@ -10,7 +10,6 @@ endif
 let b:current_syntax = "cognate"
 
 
-hi def link cogMissingSym Error
 hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
