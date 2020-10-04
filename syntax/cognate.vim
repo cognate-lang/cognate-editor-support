@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 26th September 2020
+" Latest Revision: 2nd September 2020
 
 if exists("b:current_syntax")
   finish
@@ -9,21 +9,26 @@ endif
 
 let b:current_syntax = "cognate"
 
-hi def link cogInformal  Normal
-hi def link cogOperator  Operator
-hi def link cogDelimiter Delimiter
-hi def link cogBrace     Bracket
-hi def link cogFunction  Function
-hi def link cogNumber    Number 
-hi def link cogLet       Constant
-hi def link cogSet       Constant
-hi def link cogDefine    Define
-hi def link cogRecord    Structure
-hi def link cogBoolean   Boolean
-hi def link cogBranch    Conditional
-hi def link cogComment   Comment
-hi def link cogTodo      Todo
-hi def link cogString    String
+
+hi def link cogMissingSym Error
+hi def link cogInformal   Normal
+hi def link cogOperator   Operator
+hi def link cogDelimiter  Delimiter
+hi def link cogBrace      Bracket
+hi def link cogFunction   Function
+hi def link cogNumber     Number 
+hi def link cogLet        Constant
+hi def link cogSet        Constant
+hi def link cogDefine     Define
+hi def link cogRecord     Structure
+hi def link cogBoolean    Boolean
+hi def link cogBranch     Conditional
+hi def link cogComment    Comment
+hi def link cogTodo       Todo
+hi def link cogString     String
+
+" Missing semicolons
+call matchadd("Error", '\>[^;]\n\s*\<')
 
 " Informal
 syn match cogInformal '.\w\+'
