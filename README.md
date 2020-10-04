@@ -13,6 +13,8 @@ You can also install Cognate-vim using Pathogen
 cd ~/.vim/bundle
 git clone https://github.com/stavromuellerbeta/cognate-vim
 ```
+### Delimiters
+By default, Cognate-vim makes delimiters (semicolons and commas) bold. This is to make debugging missing-semicolons easier. If you want to make delimiters even more obvious, add ```hi cogDelimiter cterm=bold,inverse``` to your vimrc.
 
 ### Known Bugs:
 - Operators inside function names are highlighted as operators.
