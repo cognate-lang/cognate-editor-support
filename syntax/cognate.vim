@@ -10,6 +10,7 @@ endif
 let b:current_syntax = "cognate"
 
 
+hi def link cogImport     Function
 hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
@@ -44,6 +45,7 @@ syn match cogLet    '\<Let\>'
 syn match cogDefine '\<Define\>'
 syn match cogSet    '\<Set\>'
 syn match cogRecord '\<Record\>'
+syn match cogImport '\<Import\>'
 " Booleans
 syn match cogBoolean '\<True\>'
 syn match cogBoolean '\<False\>'
