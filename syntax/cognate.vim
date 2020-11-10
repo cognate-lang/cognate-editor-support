@@ -19,7 +19,7 @@ hi def link cogNumber     Number
 hi def link cogLet        Constant
 hi def link cogSet        Constant
 hi def link cogDefine     Define
-hi def link cogRecord     Structure
+hi def link cogTable      Structure
 hi def link cogBoolean    Boolean
 hi def link cogBranch     Conditional
 hi def link cogComment    Comment
@@ -34,7 +34,7 @@ syn match cogInformal '.'
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
-syn match cogBrace '{\|}'
+syn match cogBrace '[\|]'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
@@ -44,7 +44,7 @@ syn match cogNumber '-*\d\+'
 syn match cogLet    '\<Let\>'
 syn match cogDefine '\<Define\>'
 syn match cogSet    '\<Set\>'
-syn match cogRecord '\<Record\>'
+syn match cogTable  '\<Table\>'
 syn match cogImport '\<Import\>'
 " Booleans
 syn match cogBoolean '\<True\>'
