@@ -15,6 +15,7 @@ hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
 hi def link cogFunction   Function
+hi def link cogIO         Special
 hi def link cogNumber     Number 
 hi def link cogLet        Constant
 hi def link cogSet        Constant
@@ -46,6 +47,9 @@ syn match cogDefine '\<Define\>'
 syn match cogSet    '\<Set\>'
 syn match cogTable  '\<Table\>'
 syn match cogImport '\<Import\>'
+" IO
+syn match cogIO '\<Print\>'
+syn match cogIO '\<Put\>'
 " Booleans
 syn match cogBoolean '\<True\>'
 syn match cogBoolean '\<False\>'
