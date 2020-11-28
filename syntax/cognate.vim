@@ -58,7 +58,7 @@ syn match cogBoolean '\<Not\>'
 syn match cogBoolean '\<Both\>'
 " Branch statements
 syn match cogBranch '\<If\>'
-syn match cogBranch '\<When\>'
+syn match cogBranch '\<Else\>'
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
 syn region cogComment start="\~\~" end="$"  contains=cogTodo
