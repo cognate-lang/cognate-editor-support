@@ -26,7 +26,7 @@ hi def link cogBranch     Conditional
 hi def link cogComment    Comment
 hi def link cogTodo       Todo
 hi def link cogString     String
-hi def link cogDelimiter  Delimiter
+hi def link cogDelimiter  Normal
 
 " Informal
 syn match cogInformal '.\w\+'
