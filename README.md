@@ -14,7 +14,11 @@ cd ~/.vim/bundle
 git clone https://github.com/stavromuellerbeta/cognate-vim
 ```
 ### Delimiters
-By default, Cognate-vim makes delimiters (semicolons and commas) bold. This is to make finding missing semicolons easier. If you want to make delimiters even more obvious, add ```hi cogDelimiter cterm=bold,inverse``` to your vimrc.
+By default, Cognate-vim does not highlight delimiters (commas and semicolons). Since these are very important syntax elements in Cognate, you may want to highlight them in bold or inversed colours like this:
+```
+hi cogDelimiter cterm=bold
+hi cogDelimiter cterm=inverse
+```
 
 ### Known Bugs:
 - Operators inside function names are highlighted as operators.
