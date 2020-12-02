@@ -10,7 +10,7 @@ endif
 let b:current_syntax = "cognate"
 
 
-hi def link cogImport     Function
+hi def link cogImport     Include
 hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
