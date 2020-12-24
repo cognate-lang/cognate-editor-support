@@ -19,6 +19,7 @@ hi def link cogIO         Special
 hi def link cogNumber     Number 
 hi def link cogLet        Constant
 hi def link cogSet        Constant
+hi def link cogDo         Keyword
 hi def link cogDefine     Define
 hi def link cogTable      Structure
 hi def link cogBoolean    Boolean
@@ -47,6 +48,7 @@ syn match cogDefine '\<Define\>'
 syn match cogSet    '\<Set\>'
 syn match cogTable  '\<Table\>'
 syn match cogImport '\<Import\>'
+syn match cogDo     '\<Do\>'
 " IO
 syn match cogIO '\<Print\>'
 syn match cogIO '\<Put\>'
