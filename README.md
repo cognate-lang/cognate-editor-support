@@ -18,7 +18,3 @@ By default, Cognate-vim does not highlight delimiters (commas and semicolons). S
 ```
 hi cogDelimiter cterm=bold
 hi cogDelimiter cterm=inverse
-```
-
-### Known Bugs:
-- Operators inside function names are highlighted as operators.
