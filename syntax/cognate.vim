@@ -33,7 +33,7 @@ hi def link cogDelimiter  Normal
 syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator  '\<\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)\>' " Hate regex
+syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
