@@ -30,7 +30,6 @@ hi def link cogString     String
 hi def link cogDelimiter  Normal
 
 " Informal
-syn match cogInformal '.\w\+'
 syn match cogInformal '.'
 " Symbols
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
@@ -40,7 +39,7 @@ syn match cogBrace '(\|)'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
-syn match cogNumber '\<\(-\)\?\d\+\.\?\d*\>'
+syn match cogNumber '\<-\?\d\+\.\?\d*\>'
 " Special stuff
 syn match cogLet    '\<Let\>'
 syn match cogDefine '\<Define\>'
@@ -49,18 +48,11 @@ syn match cogTable  '\<Table\>'
 syn match cogImport '\<Import\>'
 syn match cogDo     '\<Do\>'
 " IO
-syn match cogIO '\<Print\>'
-syn match cogIO '\<Put\>'
+syn match cogIO '\<\(Print\|Put\)\>'
 " Booleans
-syn match cogBoolean '\<True\>'
-syn match cogBoolean '\<False\>'
-syn match cogBoolean '\<Either\>'
-syn match cogBoolean '\<Not\>'
-syn match cogBoolean '\<Both\>'
+syn match cogBoolean '\<\(True\|False\|Either\|Not\|Both\)\>'
 " Branch statements
-syn match cogBranch '\<If\>'
-syn match cogBranch '\<Else\>'
-syn match cogBranch '\<ElseIf\>'
+syn match cogBranch '\<\(If\|\Else\|ElseIf\)\>'
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
 syn region cogComment start="\~\~" end="$"  contains=cogTodo
