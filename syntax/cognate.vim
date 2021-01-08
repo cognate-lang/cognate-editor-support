@@ -40,7 +40,7 @@ syn match cogBrace '(\|)'
 " Formal
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
-syn match cogNumber '\<\(-\)\?\d\+\(\.\)\?\d*\>'
+syn match cogNumber '\<\(-\)\?\d\+\.\?\d*\>'
 " Special stuff
 syn match cogLet    '\<Let\>'
 syn match cogDefine '\<Define\>'
