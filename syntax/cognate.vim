@@ -16,14 +16,10 @@ hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
 hi def link cogFunction   Function
 hi def link cogIO         Special
-hi def link cogNumber     Number 
-hi def link cogLet        Constant
-hi def link cogSet        Constant
-hi def link cogDo         Keyword
-hi def link cogDefine     Define
-hi def link cogTable      Structure
+hi def link cogNumber     Number
+hi def link cogVar        Constant
 hi def link cogBoolean    Boolean
-hi def link cogBranch     Conditional
+hi def link cogControl    Conditional
 hi def link cogComment    Comment
 hi def link cogTodo       Todo
 hi def link cogString     String
@@ -40,19 +36,12 @@ syn match cogBrace '(\|)'
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*\>'
-" Special stuff
-syn match cogLet    '\<Let\>'
-syn match cogDefine '\<Define\>'
-syn match cogSet    '\<Set\>'
-syn match cogTable  '\<Table\>'
-syn match cogImport '\<Import\>'
-syn match cogDo     '\<Do\>'
-" IO
-syn match cogIO '\<\(Print\|Put\)\>'
-" Booleans
-syn match cogBoolean '\<\(True\|False\|Either\|Not\|Both\)\>'
-" Branch statements
-syn match cogBranch '\<\(If\|\Else\|ElseIf\)\>'
+" Keywords
+syn keyword cogVar     Let Define Set
+syn keyword cogImport  Import
+syn keyword cogIO      Print Put
+syn keyword cogBoolean True False Either Not Both
+syn keyword cogControl If While Do
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
 syn region cogComment start="\~\~" end="$"  contains=cogTodo
