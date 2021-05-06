@@ -24,11 +24,12 @@ hi def link cogComment    Comment
 hi def link cogTodo       Todo
 hi def link cogString     String
 hi def link cogDelimiter  Normal
+hi def link cogSymbol     Keyword
 
 " Informal
 syn match cogInformal '.'
 " Symbols
-syn match cogOperator  '\(\*\|/\|+\|-\|==\|>=\|<=\|>\|<\)' " Hate regex
+syn match cogOperator  '\(\*\|/\|+\|-\|==\|/=\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
@@ -36,6 +37,8 @@ syn match cogBrace '(\|)'
 syn match cogFunction '\<[A-Z]\w*\>'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*\>'
+" Symbol
+syn match cogSymbol '\\\w*'
 " Keywords
 syn keyword cogVar     Let Define Set
 syn keyword cogImport  Import
