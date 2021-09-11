@@ -34,16 +34,16 @@ syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z]\w*\>'
+syn match cogFunction '\<[A-Z][A-Za-z\-?!]*\>'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*\>'
 " Symbol
-syn match cogSymbol '\\\w*'
+syn match cogSymbol '\\\[A-Za-z\-?!]+'
 " Keywords
 syn keyword cogVar     Let Define Set
 syn keyword cogImport  Import
 syn keyword cogIO      Print Put
-syn keyword cogBoolean True False Either Not Both
+syn keyword cogBoolean True False
 syn keyword cogControl If While Do
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
