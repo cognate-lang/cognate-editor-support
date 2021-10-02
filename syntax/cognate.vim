@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 4th October 2020
+" Latest Revision: 2nd October 2021
 
 if exists("b:current_syntax")
   finish
@@ -34,11 +34,11 @@ syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z][A-Za-z\-?!]*\>'
+syn match cogFunction '\<[A-Z][A-Za-z\-?!]*'
 " Numbers
-syn match cogNumber '\<-\?\d\+\.\?\d*\>'
+syn match cogNumber '\<-\?\d\+\.\?\d*'
 " Symbol
-syn match cogSymbol '\\\[A-Za-z\-?!]+'
+syn match cogSymbol '\\\<[A-Za-z\-?!]\+'
 " Keywords
 syn keyword cogVar     Let Define Set
 syn keyword cogImport  Import
