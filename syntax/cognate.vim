@@ -30,7 +30,7 @@ hi def link cogSymbol     Keyword
 syn match cogInformal '.'
 " Symbols
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|/=\|>=\|<=\|>\|<\)' " Hate regex
-syn match cogDelimiter ';\|,'
+syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
