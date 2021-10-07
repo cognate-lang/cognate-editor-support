@@ -34,7 +34,7 @@ syn match cogDelimiter ';\|,'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z][A-Za-z\-?!]*'
+syn match cogFunction '\<[A-Z][A-Za-z0-9\-?!]*'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*'
 " Symbol
