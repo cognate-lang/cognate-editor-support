@@ -38,7 +38,7 @@ syn match cogFunction '\<[A-Z][A-Za-z0-9\-?!]*'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*'
 " Symbol
-syn match cogSymbol '\\\<[A-Za-z\-?!]\+'
+syn match cogSymbol '\\\<[A-Za-z0-9\-?!]\+'
 " Keywords
 syn keyword cogVar     Let Define Set
 syn keyword cogImport  Import
