@@ -34,11 +34,11 @@ syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z][A-Za-z0-9\-?!]*'
+syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*'
 " Symbol
-syn match cogSymbol '\\\<[A-Za-z0-9\-?!]\+'
+syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+'
 " Keywords
 syn keyword cogVar     Let Define Set
 syn keyword cogImport  Import
@@ -51,4 +51,4 @@ syn region cogComment start="\~\~" end="$"  contains=cogTodo
 " Todo
 syn keyword cogTodo contained TODO FIXME
 " Strings
-syn region cogString start="'" end="'"
+syn region cogString start="'" skip="\\'" end="'"
