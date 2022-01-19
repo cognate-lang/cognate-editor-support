@@ -1,14 +1,10 @@
 " Vim syntax file
 " Language: Cognate
 " Maintainer: Finn Barber
-" Latest Revision: 2nd October 2021
+" Latest Revision: Wed 19 Jan 2022
 
-if exists("b:current_syntax")
-  finish
-endif
-
-let b:current_syntax = "cognate"
-
+setl commentstring=~~%s
+setl isk=38,42,43,45,47-58,60-62,64-90,97-122,_
 
 hi def link cogImport     Include
 hi def link cogInformal   Normal
@@ -17,7 +13,7 @@ hi def link cogBrace      Bracket
 hi def link cogFunction   Function
 hi def link cogIO         Special
 hi def link cogNumber     Number
-hi def link cogVar        Constant
+hi def link cogDecl        Constant
 hi def link cogBoolean    Boolean
 hi def link cogControl    Conditional
 hi def link cogComment    Comment
@@ -34,17 +30,16 @@ syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*'
+syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*\>'
 " Numbers
-syn match cogNumber '\<-\?\d\+\.\?\d*'
+syn match cogNumber '\<-\?\d\+\.\?\d*\>'
 " Symbol
-syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+'
+syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+\>'
 " Keywords
-syn keyword cogVar     Let Define Set
-syn keyword cogImport  Import
-syn keyword cogIO      Print Put
-syn keyword cogBoolean True False
-syn keyword cogControl If While Do
+syn match cogDecl '\<\([SL][eE][tT]\|D[eE][fF]\)\>'
+syn match cogIO   '\<P\([rR][iI][nN]\|[uU]\)[tT][sS]\?\>'
+syn match cogBoolean '\<\(T[rR][uU]\|F[aA][lL][sS]\)[eE]\>'
+syn match cogControl '\<\(I[fF]\|D[oO]\|W[hH][iI][lL][eE]\|L[oO][oO][pP]\)\>'
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
 syn region cogComment start="\~\~" end="$"  contains=cogTodo
