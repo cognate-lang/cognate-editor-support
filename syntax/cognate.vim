@@ -30,11 +30,11 @@ syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
 " Formal
-syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*\>'
+syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*'
 " Numbers
-syn match cogNumber '\<-\?\d\+\.\?\d*\>'
+syn match cogNumber '\<-\?\d\+\.\?\d*[a-z]*'
 " Symbol
-syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+\>'
+syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+'
 " Keywords
 syn match cogDecl '\<\([SL][eE][tT]\|D[eE][fF]\)\>'
 syn match cogIO   '\<P\([rR][iI][nN]\|[uU]\)[tT][sS]\?\>'
