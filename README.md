@@ -1,7 +1,7 @@
 # cognate-vim
 Vim highlighting for the Cognate programming language.
 
-![Cognate highlighting with the Molokai theme](screenshot.png?raw=true)
+![Cognate highlighting with the gruvbox theme](screenshot.png?raw=true)
 
 ### Installing:
 I recommend installing with vim-Plug like this
