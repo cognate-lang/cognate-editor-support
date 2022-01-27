@@ -39,7 +39,7 @@ syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+'
 syn match cogDecl '\<\([SL][eE][tT]\|D[eE][fF]\)\>'
 syn match cogIO   '\<P\([rR][iI][nN]\|[uU]\)[tT][sS]\?\>'
 syn match cogBoolean '\<\(T[rR][uU]\|F[aA][lL][sS]\)[eE]\>'
-syn match cogControl '\<\(I[fF]\|D[oO]\|W[hH][iI][lL][eE]\|L[oO][oO][pP]\)\>'
+syn match cogControl '\<\(I[fF]\|D[oO]\|W[hH][iI][lL][eE]\|L[oO][oO][pP]\|F[oO][rR]\)\>'
 " Comments
 syn region cogComment start="\~"   end="\~" contains=cogTodo
 syn region cogComment start="\~\~" end="$"  contains=cogTodo
