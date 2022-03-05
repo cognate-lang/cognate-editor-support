@@ -21,9 +21,15 @@ hi def link cogTodo       Todo
 hi def link cogString     String
 hi def link cogDelimiter  Normal
 hi def link cogSymbol     Keyword
+hi def link cogInvalid    Error
+hi def link cogWhiteSpace Whitespace
 
+" Invalid
+syn match cogInvalid '.'
+" Whitespace
+syn match cogWhitespace '\s'
 " Informal
-syn match cogInformal '.'
+syn match cogInformal '\<[a-z][A-Za-z0-9?!\-]*'
 " Symbols
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|/=\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';'
