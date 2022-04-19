@@ -42,7 +42,7 @@ syn match cogNumber '\<-\?\d\+\.\?\d*[a-z]*'
 " Symbol
 syn match cogSymbol '\\\<[A-Za-z0-9?!\-]\+'
 " Keywords
-syn match cogDecl '\<\([SL][eE][tT]\|D[eE][fF]\)\>'
+syn match cogDecl '\<\([SL][eE][tT]\|D[eE][fF]\|T[yY][pP][eE]\)\>'
 syn match cogIO   '\<P\([rR][iI][nN]\|[uU]\)[tT][sS]\?\>'
 syn match cogBoolean '\<\(T[rR][uU]\|F[aA][lL][sS]\)[eE]\>'
 syn match cogControl '\<\(C[aA][sS][eE]\|I[fF]\|D[oO]\|W[hH][iI][lL][eE]\|L[oO][oO][pP]\|F[oO][rR]\)\>'
