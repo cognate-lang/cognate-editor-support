@@ -29,7 +29,7 @@ syn match cogInvalid '.'
 " Whitespace
 syn match cogWhitespace '\s'
 " Informal
-syn match cogInformal '\<[a-z][A-Za-z0-9?!\-]*'
+syn match cogInformal '\<[a-z][a-z0-9?!\-']*'
 " Symbols
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|/=\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';'
@@ -52,4 +52,4 @@ syn region cogComment start="\~\~" end="$"  contains=cogTodo
 " Todo
 syn keyword cogTodo contained TODO FIXME
 " Strings
-syn region cogString start="'" skip="\\'" end="'"
+syn region cogString start="\"" skip="\\\"" end="\""
