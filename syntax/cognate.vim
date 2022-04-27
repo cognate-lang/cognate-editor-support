@@ -7,7 +7,7 @@ setl commentstring=~~%s
 setl isk=38,42,43,45,47-58,60-62,64-90,97-122,_
 
 hi def link cogImport     Include
-hi def link cogInformal   Comment
+hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
 hi def link cogFunction   Function
