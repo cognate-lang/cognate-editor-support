@@ -31,7 +31,7 @@ syn match cogWhitespace '\s'
 " Informal
 syn match cogInformal '\<[a-z][a-z0-9?!\-']*'
 " Symbols
-syn match cogOperator  '\(\*\|/\|+\|-\|==\|/=\|>=\|<=\|>\|<\)' " Hate regex
+syn match cogOperator  '\(\*\|/\|+\|-\|==\|!=\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
