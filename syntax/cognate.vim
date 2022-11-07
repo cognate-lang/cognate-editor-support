@@ -6,7 +6,6 @@
 setl commentstring=~~%s
 setl isk=38,42,43,45,47-58,60-62,64-90,97-122,_
 
-hi def link cogImport     Include
 hi def link cogInformal   Normal
 hi def link cogOperator   Operator
 hi def link cogBrace      Bracket
@@ -21,6 +20,7 @@ hi def link cogTodo       Todo
 hi def link cogString     String
 hi def link cogDelimiter  Normal
 hi def link cogSymbol     Keyword
+hi def link cogImported   Function
 hi def link cogInvalid    Error
 hi def link cogWhiteSpace Whitespace
 
@@ -30,13 +30,13 @@ syn match cogInvalid '.'
 syn match cogWhitespace '\s'
 " Informal
 syn match cogInformal '\<[a-z][a-z0-9?!\-']*'
+" Function
+syn match cogFunction '\<\([A-Za-z0-9?!\-]\+:\)\?[A-Z][A-Za-z0-9?!\-]*'
 " Symbols
 syn match cogOperator  '\(\*\|/\|+\|-\|==\|!=\|>=\|<=\|>\|<\)' " Hate regex
 syn match cogDelimiter ';'
 " Brackets
 syn match cogBrace '(\|)'
-" Formal
-syn match cogFunction '\<[A-Z][A-Za-z0-9?!\-]*'
 " Numbers
 syn match cogNumber '\<-\?\d\+\.\?\d*[a-z]*'
 " Symbol
