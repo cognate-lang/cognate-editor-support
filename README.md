@@ -1,3 +1,5 @@
+### Neovim, Helix, and Emacs users should consider [https://github.com/hedyhli/tree-sitter-cognate](https://github.com/hedyhli/tree-sitter-cognate) instead, which is a much more advanced editor plugin.
+
 # cognate-vim
 Vim highlighting for the Cognate programming language.
 
